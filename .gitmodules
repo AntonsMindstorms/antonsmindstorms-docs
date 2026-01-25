@@ -19,3 +19,6 @@
 [submodule "docs/source/Software/rcservo"]
 	path = docs/source/Software/rcservo
 	url = https://github.com/antonvh/rcservo
+[submodule "docs/source/Software/np_animation"]
+	path = docs/source/Software/np_animation
+	url = https://github.com/antonvh/np_animation

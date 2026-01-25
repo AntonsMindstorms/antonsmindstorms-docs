@@ -25,6 +25,7 @@ exclude_patterns = []
 import os, sys
 sys.path.insert(0, os.path.abspath("Software/mpy-robot-tools"))
 sys.path.insert(0, os.path.abspath("Software/PyHuskyLens/Library"))
+sys.path.insert(0, os.path.abspath("Software/np_animation/"))
 sys.path.insert(0, os.path.abspath("Software/PUPRemote/src"))
 sys.path.insert(0, os.path.abspath("Software/SerialTalk/"))
 sys.path.insert(0, os.path.abspath("Software/micropup/library/"))
