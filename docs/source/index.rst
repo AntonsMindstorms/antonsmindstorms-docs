@@ -15,6 +15,7 @@ Our libraries for easy communication between boards and tools for controlling LE
    :maxdepth: 2
 
    Software/micropup/docs/index
+   Software/lms-line-sensor/docs/index
    Software/btbricks/docs/index
    Software/rcservo/docs/index
    Software/np_animation/docs/index

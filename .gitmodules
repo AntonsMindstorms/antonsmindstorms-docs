@@ -22,3 +22,6 @@
 [submodule "docs/source/Software/np_animation"]
 	path = docs/source/Software/np_animation
 	url = https://github.com/antonvh/np_animation
+[submodule "docs/source/Software/lms-line-sensor"]
+	path = docs/source/Software/lms-line-sensor
+	url = https://github.com/AntonsMindstorms/lms-line-sensor

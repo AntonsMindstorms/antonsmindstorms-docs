@@ -31,6 +31,7 @@ sys.path.insert(0, os.path.abspath("Software/SerialTalk/"))
 sys.path.insert(0, os.path.abspath("Software/micropup/library/"))
 sys.path.insert(0, os.path.abspath("Software/btbricks/"))
 sys.path.insert(0, os.path.abspath("Software/rcservo/"))
+sys.path.insert(0, os.path.abspath("Software/lms-line-sensor/micropython/"))
 
 # Options for sitemap
 html_baseurl = 'https://docs.antonsmindstorms.com/'
