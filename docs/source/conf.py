@@ -13,16 +13,32 @@ author = "Anton, Ste7an"
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-#extensions = ["sphinx.ext.autodoc", 'sphinx_sitemap', 'sphinx.ext.napoleon']
-extensions = ["sphinx.ext.autodoc", 'sphinx.ext.napoleon', 'sphinx.ext.autosummary']
-autodoc_mock_imports = ["utime","uos","machine","busio","board","pybricks","micropython","ubluetooth","ustruct"]
-highlight_language = 'python3'
+# extensions = ["sphinx.ext.autodoc", 'sphinx_sitemap', 'sphinx.ext.napoleon']
+extensions = [
+    "sphinx.ext.autodoc",
+    "sphinx.ext.napoleon",
+    "sphinx.ext.autosummary",
+    "sphinx_sitemap",
+]
+autodoc_mock_imports = [
+    "utime",
+    "uos",
+    "machine",
+    "busio",
+    "board",
+    "pybricks",
+    "micropython",
+    "ubluetooth",
+    "ustruct",
+]
+highlight_language = "python3"
 
 # templates_path = ["_templates"]
 exclude_patterns = []
 
 # Import location for autodoc
 import os, sys
+
 sys.path.insert(0, os.path.abspath("Software/mpy-robot-tools"))
 sys.path.insert(0, os.path.abspath("Software/PyHuskyLens/Library"))
 sys.path.insert(0, os.path.abspath("Software/np_animation/"))
@@ -34,8 +50,12 @@ sys.path.insert(0, os.path.abspath("Software/rcservo/"))
 sys.path.insert(0, os.path.abspath("Software/lms-line-sensor/micropython/"))
 
 # Options for sitemap
-html_baseurl = 'https://docs.antonsmindstorms.com/'
-html_extra_path = ['robots.txt']
+# On RTD this env var contains the canonical public URL for the current build.
+html_baseurl = os.environ.get(
+    "READTHEDOCS_CANONICAL_URL", "https://docs.antonsmindstorms.com/"
+)
+sitemap_url_scheme = "{link}"
+html_extra_path = ["robots.txt"]
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
